@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://MININT-A9OLA7H\\TEST:1433;encrypt=true;trustServerCertificate=true;databaseName=companydb
+    username: sa
+    password: '0000'
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
